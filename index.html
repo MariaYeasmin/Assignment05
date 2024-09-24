@@ -12,7 +12,75 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main></main>
+    <main>
+      <!-- Navbar start -->
+      <div class="navbar bg-base-200">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <a class="btn btn-ghost text-xl">Blog</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <img src="assets/logo.png" alt="" />
+          <h3>Donate Bangladesh</h3>
+        </div>
+        <div class="navbar-end">
+          <img src="assets/coin.png" alt="" />
+          <br />
+          <p>5500 BDT</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- navbar ends -->
+      <!-- buttons -->
+      <div class="">
+        <a class="btn btn-ghost text-xl">Donation</a>
+        <a class="btn btn-ghost text-xl">History</a>
+      </div>
+      <!-- hero -->
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="assets/noakhali.png"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <button class="btn btn-primary">
+              <img src="assets/coin.png" alt="" />0 BDT
+            </button>
+            <h1 class="text-xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h1>
+            <p class="py-6">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+
+            <button class="btn bg-[#B4F461]">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="app.js"></script>
     <script src="donate.js"></script>
   </body>

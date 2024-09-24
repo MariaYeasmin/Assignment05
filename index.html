@@ -4,70 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment-05</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="lexend-font">
     <main>
       <!-- Navbar start -->
-      <div class="navbar bg-base-200">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+      <div class="sticky">
+        <div class="navbar px-[130px] bg-[#F9F7F3] py-5">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
             </div>
+            <a class="btn btn-ghost text-xl">Blog</a>
           </div>
-          <a class="btn btn-ghost text-xl">Blog</a>
+          <div class="navbar-center hidden lg:flex">
+            <img src="assets/logo.png" alt="" />
+            <h3 class="ml-2">Donate Bangladesh</h3>
+          </div>
+          <div class="navbar-end">
+            <img src="assets/coin.png" alt="" />
+
+            <p class="ml-2">5500 BDT</p>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <img src="assets/logo.png" alt="" />
-          <h3>Donate Bangladesh</h3>
-        </div>
-        <div class="navbar-end">
-          <img src="assets/coin.png" alt="" />
-          <br />
-          <p>5500 BDT</p>
-          <p></p>
+        <div class="flex gap-5 mt-10 mb-8 items-center justify-center">
+          <a class="btn bg-[#B4F461] text-xl">Donation</a>
+
+          <a class="btn bg-[#1111114D] text-xl">History</a>
         </div>
       </div>
       <!-- navbar ends -->
       <!-- buttons -->
-      <div class="">
-        <a class="btn btn-ghost text-xl">Donation</a>
-        <a class="btn btn-ghost text-xl">History</a>
-      </div>
+
       <!-- hero -->
-      <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
-          <img
-            src="assets/noakhali.png"
-            class="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <button class="btn btn-primary">
+      <div class="mx-36 mt-8 border rounded-2xl p-8">
+        <div class="flex gap-7">
+          <div class="w-1/2">
+            <img
+              src="assets/noakhali.png"
+              class="rounded-lg shadow-2xl md:h-96"
+            />
+          </div>
+          <div class="w-1/2 flex flex-col gap-2">
+            <button class="btn w-max">
               <img src="assets/coin.png" alt="" />0 BDT
             </button>
             <h1 class="text-xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
             </h1>
-            <p class="py-6">
+            <p class="text-[#111111B3]">
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
               supplies and to those affected by this disaster. Every
@@ -75,8 +92,13 @@
               supporting the relief efforts and making a positive impact on the
               lives of those in need.
             </p>
+            <input
+              class="border p-4 rounded-lg"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
 
-            <button class="btn bg-[#B4F461]">Get Started</button>
+            <button class="btn bg-[#B4F461]">Donate Now</button>
           </div>
         </div>
       </div>

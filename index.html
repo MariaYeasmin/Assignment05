@@ -61,9 +61,10 @@
               />
             </div>
             <div class="md:w-1/2 max-[450px]:mt-2 flex flex-col gap-2">
-              <button class="btn w-max">
-                <img src="assets/coin.png" alt="" />0 BDT
-              </button>
+              <div class="flex gap-2 w-max">
+                <img src="assets/coin.png" alt="" />
+                <h2 id="donation-total">0</h2>
+              </div>
               <h1 class="text-xl font-bold">
                 Donate for Flood at Noakhali, Bangladesh
               </h1>
@@ -76,12 +77,15 @@
                 the lives of those in need.
               </p>
               <input
+                id="donate-amount-n"
                 class="border p-4 rounded-lg"
                 type="text"
                 placeholder="Write Donation Amount"
               />
 
-              <button class="btn bg-[#B4F461]">Donate Now</button>
+              <button id="donate-now-n" class="btn bg-[#B4F461]">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
